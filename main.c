@@ -20,7 +20,7 @@ int main() {
     int choice;
 
     do {
-        printf("Inventory Management System\n");
+        printf("\nInventory Management System\n");
         printf("1. Add Item\n");
         printf("2. Display Inventory\n");
         printf("3. Exit\n");
@@ -29,7 +29,7 @@ int main() {
         // read choice
         if (scanf("%d", &choice) != 1) {
             while (getchar() != '\n'); // clear invalid input
-            printf("Invalid.\n");
+            printf("Invalid. Please enter 1, 2, or 3.\n");
             continue;
         }
 
@@ -41,7 +41,7 @@ int main() {
                 displayInventory(inventory, numItems);
                 break;
             case 3:
-                printf("Exiting.");
+                printf("Exiting.\n");
                 break;
             default:
                 printf("Invalid. Please enter 1, 2, or 3.\n");
@@ -95,7 +95,7 @@ void displayInventory(Item inventory[], int numItems) {
         return;
     }
 
-    printf("Inventory:\n");
+    printf("\nInventory:\n");
     printf("%-20s %-10s %-10s\n", "Name", "Quantity", "Price");
     for (int i = 0; i < numItems; i++) {
         printf("%-20s %-10d $%-10.2f\n", inventory[i].name, inventory[i].quantity, inventory[i].price);
