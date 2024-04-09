@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdbool.h>
-#include <ctype.h>
+#include <stdlib.h> // for atof
+#include <ctype.h> // for isdigit
 
 // structure for inventory items
 typedef struct {
