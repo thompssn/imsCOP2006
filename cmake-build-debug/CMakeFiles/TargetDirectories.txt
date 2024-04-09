@@ -1,0 +1,3 @@
+C:/Users/jejje/CLionProjects/ims/cmake-build-debug/CMakeFiles/ims.dir
+C:/Users/jejje/CLionProjects/ims/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jejje/CLionProjects/ims/cmake-build-debug/CMakeFiles/rebuild_cache.dir
